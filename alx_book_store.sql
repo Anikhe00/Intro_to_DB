@@ -7,7 +7,7 @@ USE alx_book_store;
 -- Create a table for authors
 CREATE TABLE Authors (
   author_id INT AUTO_INCREMENT PRIMARY KEY,
-  author_name VARCHAR(215) NOT NULL,
+  author_name VARCHAR(215) NOT NULL
 );
 
 -- Create a table for Books
@@ -20,7 +20,7 @@ CREATE TABLE Books (
   FOREIGN KEY (author_id) REFERENCES Authors(author_id)
 );
 
---Create a table for Customers
+-- Create a table for Customers
 CREATE TABLE Customers (
   customer_id INT AUTO_INCREMENT PRIMARY KEY,
   customer_name VARCHAR(215) NOT NULL,
